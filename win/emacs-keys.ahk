@@ -69,7 +69,7 @@ $^w::
    If WinActive("ahk_class Chrome_WidgetWin_1")
      send ^{w}
    Else
-     send ^{c}
+     send ^{x}
    return 
 
 ^y:: Send ^v
@@ -78,14 +78,18 @@ $^v::send {PgDn}
 
 !v::send {PgUp}      ; alt+v -> page up
 !d::^Del
-!w::^x
+!w::Send ^{c}
+
 !f::send ^{Right}
++!f::send +^{Right}
 !b::send ^{Left}
++!b::send +^{Left}
+
 !BS::send ^{BS}
 ^!e::send ^{End}
 ^!a::send ^{Home}
 
-^x::
+$^x::
   CtrlXPrefix = 1
   return
 			
