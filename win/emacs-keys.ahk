@@ -81,9 +81,9 @@ $^v::send {PgDn}
 !w::Send ^{c}
 
 !f::send ^{Right}
-+!f::send +^{Right}
+!^f::send +^{Right}
 !b::send ^{Left}
-+!b::send +^{Left}
+!^b::send +^{Left}
 
 !BS::send ^{BS}
 ^!e::send ^{End}
